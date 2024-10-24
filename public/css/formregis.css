@@ -1,0 +1,139 @@
+body{
+    font-size: 1rem;
+    position: relative;
+    overflow: auto;
+    font-family: Nunito, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+}
+
+
+.container{
+    top: 2rem;
+    position: relative;
+    display: block;
+    justify-content: center;
+    align-items: end;
+    width: 70%;
+    height: 90vh;
+    box-shadow: 2px 2px 5px; 
+    box-sizing: border-box;
+}
+
+
+form{
+
+    position: relative;
+    width: 95%;
+    height: 100%;
+    display: block;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.titulo{
+    top: 6.5%;
+    position: relative;
+    height: 10%;
+    margin: 0;
+}
+
+.bloqueGeneral{
+    position: relative;
+    height: 80%;
+    display: block;
+    margin: 0;
+    justify-content: start;
+    top:5%
+}
+.check{
+    display: flex;
+    height: 1.2rem;
+    outline: none;
+    border: none;
+    background-color: inherit;
+    width: 10%;
+    border-bottom: 1px solid hsl(6, 81%, 43%);
+
+}
+
+.check label{
+    margin-left: 10%;
+    border-bottom: 1px solid hsl(6, 81%, 43%);
+}
+
+
+
+.blockBtn{
+    margin: 0;
+    position: relative;
+    height: 10%;
+    /* background-color: red; */
+    bottom: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    
+}
+
+
+
+
+.bloque{
+    width: 100%;
+    height: 6.5%;
+    margin: 1% 0px;
+    display: flex;
+    left: 0px;
+}
+.bloque input, .bloque select{
+    margin-left: 2%;
+    height: 1rem;
+    width: 60%;
+    outline: none;
+    border: none;
+    background-color: inherit;
+    border-bottom: 1px solid hsl(6, 81%, 43%);
+}
+
+
+
+.btnIzq button{
+
+    background-color: none;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.btnIzq button img{
+    width: 28px;
+    opacity: 0.8;
+}
+.btnIzq button img:hover{
+    opacity: 1;
+    width: 30px;
+}
+
+.btnDer{
+    width: 50%;
+}
+.btnAceptar{
+    background-color: none;
+    background: none;
+    outline: none;
+    border: none;
+    margin-right: 4%;
+    background-color: rgb(31, 173, 31);
+    box-shadow: 2px 2px 8px black;
+    height: 2rem;
+    border-radius: 8px;
+    padding: 1px 18px;
+    opacity: 0.8;
+    color: hsl(37, 76%, 97%);
+}
+
+.btnAceptar:hover{
+    opacity: 1;
+}
+

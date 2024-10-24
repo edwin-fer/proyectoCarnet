@@ -1,0 +1,156 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(../imagenes/libre/1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+    box-sizing: border-box;
+    text-align: center; 
+}
+
+h2 {
+    color: #0066cc; 
+    margin-bottom: 1rem;
+}
+
+p {
+    color: #333;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.login-form {
+    width: 100%;
+    margin-top: 1.5rem; 
+}
+
+.form-imput {
+    margin-bottom: 1.5rem;
+    text-align: left; 
+}
+
+.form-imput label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold; 
+    color: #444; 
+}
+
+.form-imput input[type="text"], 
+.form-imput input[type="password"], 
+.form-imput input[list] {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    font-size: 1rem;
+    transition: border 0.3s;
+    box-sizing: border-box;
+}
+
+.form-imput input[type="text"]:focus, 
+.form-imput input[type="password"]:focus {
+    border-color: #0066cc;
+    outline: none;
+}
+
+.btn-primary, .btn-default {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: calc(50% - 1rem); 
+}
+
+.btn-primary {
+    background-color: #0066cc;
+    color: #fff;
+    margin-right: 1rem; 
+}
+
+.btn-primary:hover {
+    background-color: #004d99;
+}
+
+.btn-default {
+    background-color: #ccc;
+    color: #333;
+}
+
+.btn-default:hover {
+    background-color: #999;
+}
+
+input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+span a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+span a:hover {
+    text-decoration: underline;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.imgcontainer img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .container {
+        padding: 1.5rem;
+    }
+    
+    .btn-primary, .btn-default {
+        width: calc(50% - 1rem); 
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-imput input[type="text"], 
+    .form-imput input[type="password"], 
+    .form-imput input[list] {
+        font-size: 0.9rem;
+        padding: 0.65rem;
+    }
+
+    .btn-primary, .btn-default {
+        font-size: 0.9rem;
+        padding: 0.65rem;
+    }
+    
+    .btn-primary, .btn-default {
+        width: 100%;
+        margin-right: 0; 
+        margin-bottom: 1rem; 
+    }
+}

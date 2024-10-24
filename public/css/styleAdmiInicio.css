@@ -1,0 +1,79 @@
+
+.logo{
+    background-image: url('../imagenes/logo.png');
+    background-size: 65%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    z-index: 10; 
+    opacity: 0.2; 
+    
+}
+
+
+body{
+    position: relative;
+    margin: auto;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    font-family: Nunito, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.container{
+    position: relative;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin: auto;
+    z-index: 100;
+}
+
+.bloque{
+    width: 31%;
+    height: 75vh;
+    box-sizing: border-box;
+}
+
+.bloquedireccion, a{
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.bloque img{
+    width: 300px;
+    height: auto;
+}
+
+.abajo{
+    display: inline-flex;
+    align-items: end;
+    margin: auto;
+}
+.arriba{
+    display: flex;
+    align-items: start;
+}
+
+
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    transform: translateY(-40px);
+    
+}
+
+.titulo h4{
+    transform: translateY(-10px);
+}
+
+
+
+

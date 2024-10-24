@@ -1,0 +1,28 @@
+
+
+
+.notifi img{
+    width:40px;
+    /* background: linear-gradient(135deg, #d61f1f, #c54444); */
+    /* box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); */
+}
+.notifi{
+    position: absolute;
+    right: -25px;
+    top: -10px;
+
+}
+.btnVertical{
+    border-bottom: 1px solid;
+    box-sizing: border-box;
+    position: relative;
+    
+}
+
+.notifi i{
+    position: absolute;
+    right: 8px;
+    top: 12px;
+    font-size: 0.9rem;
+
+}

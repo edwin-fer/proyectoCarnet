@@ -1,0 +1,232 @@
+:root{
+    --columnWidth: 15%;
+    --columnHeight: 100vh;
+    --bodyWidth: 20%;
+
+}
+
+*{
+    font-size: 0.98rem;
+    font-family: Nunito, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+
+
+.column{
+    position: relative;
+    width:var(--columnWidth);
+    height: var(--columnHeight);
+    background-color:hsl(6, 81%, 43%);
+    display: block;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    color: hsl(37, 76%, 97%);
+    box-shadow: 2px 2px 8px black;
+}
+
+.column .logo{
+    position: relative;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    
+}
+
+.column .logo img{
+    position: relative;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.column .tipos-carnet{
+    position: relative;
+    text-align: center;
+    width: 95%;
+    box-sizing: border-box;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    float: right;
+    
+}
+
+.column .tipos-carnet h3{
+    font-size: 170%;
+}
+
+.btnVertical, .cuadro a{
+    background-color: inherit;
+    margin: 0%;
+    padding: 5px;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    font-size: 0.8rem;
+    display: block;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    color: hsl(37, 76%, 97%);
+
+
+}
+
+.btnVertical{
+    width: 90%;
+    font-size: 1rem;
+    color: hsl(37, 76%, 97%);
+}
+
+.btnVertical:hover{
+    border-bottom: 1px solid hsl(37, 76%, 97%);
+    color:hsl(38, 5%, 69%);
+}
+.cuadro a:hover{
+    width: 80%;
+    border-bottom: 1px solid hsl(37, 76%, 97%);
+    color: hsl(38, 5%, 69%);
+}
+
+
+.column .tipos-carnet .cuadro{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    width: 80%;
+    float: right;
+}
+
+
+.column .tipos-carnet .cuadro{
+    display: none;
+
+}
+
+.column .tipos-carnet .cuadro .btnVertical span{
+    /* background-color: coral; */
+    /* border-bottom: 1px solid red; */
+    /* este epan era para ingresar un logo o indicativo para señalar donde estaba el puntero
+    debido al poco tiempo que queda se omite pero se deja el span para futuros arreglos */
+}
+
+.vista{
+    width: 100%;
+}
+
+.vista iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+
+}
+
+
+
+
+
+.btnSalir {
+    position: absolute; 
+    bottom: 20px; 
+    right: 20px; 
+    padding: 10px 20px; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+    background: linear-gradient(135deg, #ff3b3b, #ff7878);
+}
+
+.btnSalir:hover {
+    background: linear-gradient(135deg, #d61f1f, #c54444);
+}
+
+.btnSalir button:active {
+    transform: scale(0.98);
+}
+
+
+
+
+@media (max-width: 1280px) {
+
+    .column .tipos-carnet h3{
+        font-size: 1.3rem;
+    }
+
+    .btnVertical, .cuadro a{
+        font-size: 0.8rem;
+        padding: 1px;
+    }
+
+    .vista {
+        width: 75%;
+        height: auto;
+    }
+
+    .logo img {
+        width: 70%; 
+    }
+
+    .tipos-carnet h3 {
+        font-size: 150%; 
+    }
+
+    .btnVertical {
+        font-size: 0.9rem; 
+    }
+
+    .cuadro a {
+        font-size: 0.8rem;
+    }
+
+    .btnSalir {
+        bottom: 10px; 
+        right: 10px;
+        padding: 8px 16px; 
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .column .tipos-carnet h3{
+        font-size: 1.3rem;
+    }
+
+    .btnVertical, .cuadro a{
+        font-size: 0.8rem;
+        padding: 1px;
+    }
+    .vista {
+        width: 75%;
+        height: auto;
+    }
+
+    .logo img {
+        width: 70%; 
+    }
+
+    .tipos-carnet h3 {
+        font-size: 150%; 
+    }
+
+    .btnVertical {
+        font-size: 0.9rem; 
+    }
+
+    .cuadro a {
+        font-size: 0.8rem;
+    }
+
+    .btnSalir {
+        bottom: 10px; 
+        right: 10px;
+        padding: 8px 16px; 
+        font-size: 14px;
+    }
+}

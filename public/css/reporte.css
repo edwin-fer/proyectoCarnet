@@ -1,0 +1,250 @@
+*{
+    font-family: Nunito, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.logo{
+    background-image: url('../imagenes/logo.png');
+    background-size: 65%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    z-index: 1; 
+    opacity: 0.2; 
+
+}
+
+
+.container{
+    
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.encabezado{
+    width: 100%;
+    height: 10%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    top:0;
+    z-index: 10;
+}
+
+.sub-titulo{
+    width: 30%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: end;
+    left: 2%;
+}
+
+.sub-titulo h3{
+    font-size: 1.1rem;
+    position: relative;
+    top: 15%;
+    
+}
+
+.titulo{
+    width: 30%;
+    position: relative;
+    display: flex;
+    justify-content: end;
+    height: 100%;
+    overflow: hidden;
+    margin-right: 20%;
+    align-items: start;
+    right: 10%;
+}
+
+.titulo div{
+    width: 85%;
+    height: 60%;
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    box-sizing: border-box;
+
+}
+
+.titulo div h2{
+    
+    font-size: 1.1rem;
+}
+
+.titulo .img-titulo{
+    position: relative;
+    width: 15%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: start;
+    
+
+}
+.titulo img{
+    width: 100%;
+}
+
+main{
+    margin-top: 5%;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    z-index: 10;
+}
+
+main h3{
+    width: 100%;
+    margin-left: 2.5%;
+}
+
+main .conts{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: block;
+    
+}
+
+.fecha, .academico, .datos, .estados, .tipo{
+    width: 95%;
+    height: auto;
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+    left: 2%;
+    margin: 0.5% 0%;
+}
+
+.conts .nom-busq{
+    width: auto;
+    height: auto;
+    margin-top: 0.3%;
+}
+
+
+
+
+.conts ul{
+    width: auto;
+    height: 100%;
+    margin-top: 0px;
+    float: left;
+    list-style: none;
+    
+}
+
+#rols{
+    display: none;
+}
+
+.conts ul li{
+    position: relative;
+    display: flex;
+    margin: 2.5% 0px;
+    padding: 0.5% 0px;
+    left: -10%;
+    
+}
+.conts ul li label{
+    width: 95%;
+}
+
+.conts ul li label input{
+    position: relative;
+    
+}
+
+
+.conts .bloque{
+    position: relative;
+    display: block;
+    width: 70%;
+    height: auto;
+    box-sizing: border-box;
+    left: 2.5%;
+}
+
+.conts .bloque .sub-bloque {
+    position: relative;
+    width: 100%;
+    height: auto;
+    box-sizing: content-box;
+    align-items: start;
+    margin: 0.3% 0px;
+    display: none;
+
+}
+
+.sub-bloque label, .sub-bloque input{
+    position: relative;
+    width: auto;
+    height: auto;
+    display: flex;
+    box-sizing: border-box;
+    margin-left:2%;
+}
+
+.datos .bloque{
+    width: auto;
+    height: auto;
+}
+.datos .bloque .sub-bloque label{
+    width: 180px;
+}
+
+.opciones{
+    padding: 0px;
+    width: auto;
+    font-size: 0.8rem;
+}
+
+.sub-bloque input{
+    position: relative;
+    margin-left: 0.2%;
+    max-width: 100%;
+    text-align: center;
+    
+}
+
+
+.btnValidar{
+    position: absolute;
+    float: right;
+    bottom: 5%;
+    right: 10%;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 0.8%;
+    margin: 0.5%;
+    width: 10rem;
+    border-radius: 8px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+
+.sub-bloque2{
+    display: none;
+    }
+
+
+
+
