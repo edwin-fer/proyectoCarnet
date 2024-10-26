@@ -500,6 +500,7 @@ if (isset($_SESSION['jsonFilePath'])) {
                             <td><?php echo $value['programaOcargo'];  ?></td>
                             <td><?php echo $value['estadopago'];  ?></td>
                             <td><?php echo $value['foto'];  ?></td>
+                            <td><?php echo $value['codigotarjeta'];  ?></td>
                             <td><?php echo $value['correo'];  ?></td>
                             <td><a href="../pagecambioestado/pagependiente.php?Id=<?php echo $value['id_pre_pri'];?>
                             &nombre=<?php echo $value['nombre'];?>

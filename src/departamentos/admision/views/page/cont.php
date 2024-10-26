@@ -1,14 +1,7 @@
 <?php
 if (session_status() === PHP_SESSION_NONE) {
-    session_start(); // Inicia la sesión si no está activa
+    session_start(); 
 }
-
-    // $_SESSION['fechas'] = $fechasarray;
-    // $_SESSION['programa'] = $programaarray;
-    // $_SESSION['estados'] = $estadofinal;
-    // $_SESSION['tipo'] = $tipofinal;
-
-    
 
     
 
@@ -16,7 +9,7 @@ if (session_status() === PHP_SESSION_NONE) {
     if (isset($_SESSION['jsonFilePath'])) {
         $jsonFilePath = $_SESSION['jsonFilePath'];
     
-        // Verificar si el archivo JSON existe
+
         if (file_exists($jsonFilePath)) {
             // Cargar y decodificar los datos del archivo JSON
             $jsonContent = file_get_contents($jsonFilePath);
@@ -727,18 +720,6 @@ if (session_status() === PHP_SESSION_NONE) {
 
 
 
-    // $contenedor=[];
-    // if(true){
-
-    //     $contenedor['tipo']['pregrado primer']=$pregadopri;
-    //     $contenedor['tipo']['pregrado']=$pregado;
-    //     $contenedor['tipo']['postgrado primer']=$postgradopri;
-    //     $contenedor['tipo']['postgrado']=$postgrado;
-    //     $contenedor['tipo']['grado']=$grado;
-    //     $contenedor['tipo']['egresado']=$egresado;
-    //     $contenedor['tipo']['jefatura']=$jefatura;
-
-    // }
 
    
     
@@ -751,99 +732,6 @@ if (session_status() === PHP_SESSION_NONE) {
     $i=0;
 
 
-    // foreach($contenedor as $array){
-
-    //         switch($array){
-
-    //             case 'pregrado';
-
-    //                     foreach($pregado as $key){
-    //                         foreach($datos['estados']['estados'] as $value){
-
-    //                             if($key['id_pre_pri'] == $value['id_usuario']){
-    //                                 $i++;
-                                    
-
-    //                                 switch($value['nombreEstado']){
-    //                                     case 'Pendiente':
-    //                                         $key['stdp'] = $value['nombreEstado'];
-    //                                         $key['fechainiciop'] = $value['fecha_inicio'];
-    //                                         $key['fechafinp'] = $value['fecha_fin'];
-    //                                         $key['departamentoadmip'] = $value['nombre_admision'];
-    //                                     break;
-
-    //                                     case 'Realizado':
-    //                                         $key['stdr'] = $value['nombreEstado'];
-    //                                         $key['fechainicior'] = $value['fecha_inicio'];
-    //                                         $key['fechafinr'] = $value['fecha_fin'];
-    //                                         $key['departamentotir'] = $value['nombre_ti'];
-    //                                     break;
-
-    //                                     case 'Recibido':
-    //                                         $key['stdr'] = $value['nombreEstado'];
-    //                                         $key['fechainicior'] = $value['fecha_inicio'];
-    //                                         $key['fechafinr'] = $value['fecha_fin'];
-    //                                         $key['departamentoadmir'] = $value['nombre_admision'];
-    //                                     break;
-
-    //                                     case 'Entregado':
-    //                                         $key['stde'] = $value['nombreEstado'];
-    //                                         $key['fechainicioe'] = $value['fecha_inicio'];
-    //                                         $key['fechafine'] = $value['fecha_fin'];
-    //                                         $key['departamentoadmie'] = $value['nombre_admision'];
-    //                                     break;
-
-    //                                     case 'Cancelado':
-    //                                         $key['stdc'] = $value['nombreEstado'];
-    //                                         $key['fechainicioc'] = $value['fecha_inicio'];
-    //                                         $key['fechafinc'] = $value['fecha_fin'];
-    //                                         $key['departamentoadmic'] = $value['nombre_admision'];
-    //                                     break;
-    //                                     case 'Reproceso':
-    //                                         $key['stdrp'] = $value['nombreEstado'];
-    //                                         $key['fechainiciorp'] = $value['fecha_inicio'];
-    //                                         $key['fechafinrp'] = $value['fecha_fin'];
-    //                                         $key['departamentoadmirp'] = $value['nombre_admision'];
-    //                                     break;
-                                        
-    //                                 }
-                                    
-    //                             }
-                                
-    //                         }
-    //                         $pregadonuevo[] = $key;
-                            
-    //                     }
-
-    //             break;
-
-    //         }
-
-    // }
-
-
-
-
-    
-
-    //             $contenedor=[];
-    // if(true){
-
-    //     $contenedor['pregrado primer']=$pregadopri;
-    //     $contenedor['pregrado']=$pregado;
-    //     $contenedor['postgrado primer']=$postgradopri;
-    //     $contenedor['postgrado']=$postgrado;
-    //     $contenedor['grado']=$grado;
-    //     $contenedor['egresado']=$egresado;
-    //     $contenedor['jefatura']=$jefatura;
-
-    // }
-                
-                
-    //             echo "<pre>";
-    // print_r($contenedor);
-    // // print_r($datos['estados']['estados']);
-    //             echo "</pre>";
 
     $pregradoprimernuevo=[];
     $pregradonuevo=[];

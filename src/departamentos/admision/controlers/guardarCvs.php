@@ -2,11 +2,10 @@
 
 
 if (session_status() === PHP_SESSION_NONE) {
-    session_start(); // Inicia la sesión si no está activa
+    session_start(); 
 }
 
 
-// include_once('controlerscvs/cvs.php');
 require_once '../models/guardarCvs.php';
 require_once '../models/modeloprepripaso2.php';
 require_once '../models/modeloprepri.php';

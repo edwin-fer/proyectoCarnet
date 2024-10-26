@@ -1,7 +1,5 @@
 <?php
     require_once '../../../../usuarios/models/temAdmision.php';
-        // Establecer un ID de sesión provisional (solo para pruebas)
-                // session_id('provisional123');
 
 // if($_POST){
             if(!empty($_POST)){
@@ -57,81 +55,8 @@
                     ];
                 }
 
-                // echo isset($_SESSION['ppenviar'])?$_SESSION['ppenviar']:"";
-                // echo isset($_SESSION['ppenviarvol'])?$_SESSION['ppenviarvol']:"";
 
                 header('location: ../../views/page/contador2.php');
 
-                // echo isset($_SESSION['ppenviar'])?$_SESSION['ppenviar']:"";
-                // echo isset($_SESSION['ppenviarvol'])?$_SESSION['ppenviarvol']:"";
-
-                // echo trim($_SESSION['tipo']);
-                //     if($idti){
-                //         if($datos){
-
-                //             if(trim($tusuario)){
-                                
-                //                 switch($tusuario){
-
-                //                     case 'Pregrado Primer Semestre':
-                //                         header('location: ../../views/pagepregradoprimer/vipp.php');
-                //                     break;
-                                    
-                //                     case 'Pregrado':
-                //                         header('location: ../../views/pagepregrado/vip.php');
-                //                     break;
-
-                //                     case 'Postgrado Primer Semestre':
-
-                //                         header('location: ../../views/pagepostprimer/viptp.php');
-                                        
-                //                     break;
-
-                //                     case 'Postgrado':
-
-                //                         header('location: ../../views/pagepost/vipt.php');
-                                        
-                //                     break;
-
-                //                     case 'Grado':
-
-                //                         header('location: ../../views/pagegrado/vig.php');
-
-                //                     break;
-
-                //                     case 'Egresado':
-
-                //                         header('location: ../../views/pageegresado/vie.php');
-
-                //                     break;
-
-                //                     case 'Jefatura':
-
-                //                         header('location: ../../views/pagejefatura/vijp.php');
-
-                //                     break;
-
-                //                     case 'Duplicado':
-
-                //                         header('location: ../../views/pageduplicado/vid.php');
-
-                //                     break;
-
-                //                 }
-                //             }
-
-                            
-                            
-                //         }else{
-
-                //             // header('location: ../../departamentos/admision/views/viewsAdmision.php');
-                //             echo "haocurrido un error";
-                //         }
-                //     }
                 
-                
-           
-
-
-        // }
 ?>

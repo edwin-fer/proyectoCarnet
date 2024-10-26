@@ -2,7 +2,7 @@
 
 
 if (session_status() === PHP_SESSION_NONE) {
-    session_start(); // Inicia la sesión si no está activa
+    session_start(); 
 }
 
 
@@ -17,9 +17,7 @@ require_once '../models/modeloestado.php';
 if ($_POST) {
     $data = $_SESSION['datoscompletos'];
     $dataincompleto =  $_SESSION['datosincompletos'];
-        // echo "<pre>";
-        // print_r($data);
-        // echo "</pre>";
+    
         $completos = isset($_POST['edc'])?$_POST['edc']:"";
         $incompletos = isset($_POST['etd'])?$_POST['etd']:"";
         $i=0;

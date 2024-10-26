@@ -2,7 +2,7 @@
 // session_start();
 
     if (session_status() === PHP_SESSION_NONE) {
-        session_start(); // Inicia la sesión si no está activa
+        session_start(); 
     }
 
 
@@ -254,61 +254,7 @@
            $_SESSION['datoscompletos'] = $dataNuevo;
            $_SESSION['datosincompletos'] = isset($incompleto);
            $_SESSION['id'] = $_POST['id'];
-        // $_SESSION['datos'] = $resultado;
         
-
-
-        // print('<!DOCTYPE html>
-        // <html lang="es">
-        // <head>
-        //     <meta charset="UTF-8">
-        //     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        //     <link rel="stylesheet" href="../../../../../public/css/stylefooter.css">
-        //     <link rel="stylesheet" href="../../../../../public/css/stylehoja.css">
-        //     <title>Formulario con Cargando</title>
-        // </head>
-        // <body>
-                
-        //     <form action="../guardarCvs.php" method="post" id="myForm">
-        //         <button type="submit" value="edc" name="edc" id="submitBtn1">Enviar Datos Completos</button>
-        //         <button type="submit" value="etd" name="etd" id="submitBtn2">Enviar Todos los Datos</button>
-        //     </form>
-
-        //     <!-- Imagen de carga -->
-        //     <div id="loading" class="loading-container">
-        //         <img src="ruta/a/tu/imagen-de-cargando.gif" alt="Cargando...">
-        //     </div><footer class="footer">
-
-        //     <p>SISTEMA Version 1.0 © Seguimiento etapa productiva 2024 - SENA CEDRUM Norte de Santander - Colombia</p>
-        //     <p>Desarrollado por: Universidad Libre Cúcuta - Aprendices ADSO Edwin Yair Palacios Reyes</p>
-        //     <p>Correo: edwintiken@gmail.com</p>
-        //     </footer>
-
-
-            
-        //     <script src="../../../../public/js/js.js"></script>
-
-        //     <script>
-        //         // Obtén los elementos del formulario y los botones
-        //         const form = document.getElementById("myForm");
-        //         const submitBtn1 = document.getElementById("submitBtn1");
-        //         const submitBtn2 = document.getElementById("submitBtn2");
-        //         const loading = document.getElementById("loading");
-
-        //         // Agregar el evento de submit al formulario
-        //         form.addEventListener("submit", function(event) {
-        //             // Mostrar la imagen de carga
-        //             loading.style.display = "block";
-
-        //             // Deshabilitar ambos botones para evitar múltiples envíos
-        //             submitBtn1.disabled = true;
-        //             submitBtn2.disabled = true;
-        //         });
-        //     </script>
-
-        // </body>
-        // </html>
-        // ') ;
 
         print('<form action="../guardarCvs.php" method="post">
         <button type="submit" value="edc" name="edc">Enviar Datos Completos</button>

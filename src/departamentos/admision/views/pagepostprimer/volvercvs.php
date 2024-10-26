@@ -9,30 +9,30 @@
     <style>
         .container {
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    height: 50vh; /* Altura completa de la ventana */
+    justify-content: center; 
+    align-items: center; 
+    height: 50vh; 
 }
 
 .back-button {
-    background: linear-gradient(135deg, #ff3b3b, #ff7878); /* Color de fondo */
-    color: white; /* Color del texto */
-    padding: 15px 30px; /* Espaciado interno */
-    font-size: 16px; /* Tamaño de fuente */
-    border: none; /* Sin borde */
-    border-radius: 25px; /* Bordes redondeados */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-    transition: background-color 0.3s, transform 0.2s; /* Transiciones suaves */
-    text-transform: uppercase; /* Texto en mayúsculas */
+    background: linear-gradient(135deg, #ff3b3b, #ff7878); 
+    color: white; 
+    padding: 15px 30px; 
+    font-size: 16px; 
+    border: none; 
+    border-radius: 25px; 
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.2s; 
+    text-transform: uppercase; 
 }
 
 .back-button:hover {
-    background: linear-gradient(135deg, #d61f1f, #c54444); /* Color al pasar el ratón */
-    transform: scale(1.05); /* Efecto de escala al pasar el ratón */
+    background: linear-gradient(135deg, #d61f1f, #c54444); 
+    transform: scale(1.05); 
 }
 
 .back-button:active {
-    transform: scale(0.95); /* Efecto de pulsación */
+    transform: scale(0.95); 
 }
     </style>
 </head>

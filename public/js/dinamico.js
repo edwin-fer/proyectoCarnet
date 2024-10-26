@@ -5,7 +5,7 @@ function abrircuadro(){
 
   for (i = 0; i < coll.length; i++) {
       coll[i].addEventListener("click", function() {
-      // this.classList.toggle("active");
+        
   var conten = this.nextElementSibling;
   if (conten.style.display === "block") {
     conten.style.display = "none";

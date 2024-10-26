@@ -1,9 +1,9 @@
 <?php
 
 if (session_status() === PHP_SESSION_NONE) {
-    session_start(); // Inicia la sesión si no está activa
+    session_start(); 
 }
-// require_once('../../../confing/conexion.php');
+
 require_once('../../../../usuarios/models/login.php');
 $model = new login();
 $model->validateTi();
@@ -118,10 +118,6 @@ if (isset($_SESSION['jsonFilePath'])) {
                 
             }
 
-            // echo "<pre>";
-            //     print_r($postgradoprimer);
-            // // echo    $datos['usuarios']['usuarios'][5]['documento'];
-            // echo "</pre>";
 
         $_SESSION['pregradoprimer'] = $pregradoprimer;
         $_SESSION['pregrado'] = $pregrado;
@@ -138,7 +134,6 @@ if (isset($_SESSION['jsonFilePath'])) {
         echo "El archivo JSON no existe.";
     }
 
-    // header('location: ../viewsTI.php');
     
         if($_SESSION['login'] == "Login"){
 

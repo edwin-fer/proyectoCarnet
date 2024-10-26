@@ -1,5 +1,5 @@
 function agregarSlashes(input) {
-    let valor = input.value.replace(/\D/g, ''); // Eliminar todo lo que no sea un número
+    let valor = input.value.replace(/\D/g, ''); 
     if (valor.length > 2 && valor.length <= 4) {
         valor = valor.slice(0, 2) + '/' + valor.slice(2);
     } else if (valor.length > 4) {
@@ -10,12 +10,12 @@ function agregarSlashes(input) {
 
 
  function verificarFecha() {
-// Obtener el valor del input
+
 var inputFecha = document.getElementById('fechaInicio').value;
 
-// Verificar si el campo está vacío
+
 if (inputFecha.trim() === "") {
-    // Asignar una fecha por defecto si está vacío (ej. fecha actual)
+    
     var hoy = new Date();
     var dia = ("0" + hoy.getDate()).slice(-2);
     var mes = ("0" + (hoy.getMonth() + 1)).slice(-2);
@@ -25,7 +25,7 @@ if (inputFecha.trim() === "") {
     document.getElementById('fechaInicio').value = fechaPorDefecto;
 }
 
-// Retorna true para enviar el formulario
+
 return true;
 }
 

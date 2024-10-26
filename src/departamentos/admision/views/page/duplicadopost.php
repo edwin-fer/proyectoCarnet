@@ -1,8 +1,8 @@
 <?php
 if (session_status() === PHP_SESSION_NONE) {
-    session_start(); // Inicia la sesión si no está activa
+    session_start(); 
 }
-// require_once('../../../confing/conexion.php');
+
 require_once(__DIR__ . '/../../../../usuarios/models/login.php');
 $model = new login();
 $model->validateadmin();

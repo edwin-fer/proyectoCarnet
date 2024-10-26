@@ -1,15 +1,9 @@
 <?php
 if (session_status() === PHP_SESSION_NONE) {
-    session_start(); // Inicia la sesión si no está activa
+    session_start(); 
 }
 
-    // $_SESSION['fechas'] = $fechasarray;
-    // $_SESSION['programa'] = $programaarray;
-    // $_SESSION['estados'] = $estadofinal;
-    // $_SESSION['tipo'] = $tipofinal;
-
     
-
     
     include_once('cont.php');
     require_once('../../../../usuarios/models/login.php');
@@ -80,21 +74,6 @@ if (session_status() === PHP_SESSION_NONE) {
                     </div>
 
 
-                    <!-- <div class="estados linea">
-                        <label for="estado">Estados:</label>
-                        <select name="estados" id="estado">
-                            <option value="todos">Todos los Estados</option>
-                            <option value="Pendiente">Pendientes</option>
-                            <option value="Realizado">Realizados</option>
-                            <option value="Recibido">Recibidos</option>
-                            <option value="Entregado">Entregados</option>
-                            <option value="Cancelado">Cancelados</option>
-                            <option value="Reproceso">Reproceso</option>
-            
-            
-                        </select>
-                    </div> -->
-
 
                     
                     <div class="buscar">
@@ -105,11 +84,6 @@ if (session_status() === PHP_SESSION_NONE) {
                         </button> -->
                     <!-- </form> -->
                     </div>
-
-                    <!-- <div class="buscar linea">
-                        <label for="programa">Programa academico</label>
-                        <input type="text" id="programa" name="programa">
-                    </div> -->
 
 
 

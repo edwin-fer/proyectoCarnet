@@ -1,7 +1,5 @@
 <?php
     require_once '../../../../usuarios/models/temAdmision.php';
-        // Establecer un ID de sesión provisional (solo para pruebas)
-                // session_id('provisional123');
 
 
                 // Define la ruta del archivo JSON temporal en una carpeta del servidor

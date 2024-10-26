@@ -26,12 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
                     
 
-                    //   for(let j = 0; j <= checboxx.length; j++){
-                        
-                    //       checboxx[i].checked = false;
-                    //       subBlo[i].style.display = "none";
-                    //       cont.style.display = "block";
-                    //       }
+                   
                         cont.style.display = "block";
                     
                 }

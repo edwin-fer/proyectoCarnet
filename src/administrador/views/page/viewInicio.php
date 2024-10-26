@@ -2,7 +2,7 @@
 
 ini_set('session.gc_maxlifetime', 86400);
 if (session_status() === PHP_SESSION_NONE) {
-    session_start(); // Inicia la sesión si no está activa
+    session_start(); 
 }
 
 

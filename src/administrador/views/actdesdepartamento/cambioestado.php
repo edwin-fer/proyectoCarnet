@@ -20,33 +20,8 @@ if(trim($_GET['estado']) == "Activo"){
 }
 
 
-// if(trim($_GET['estado']) == "Pendiente" && $_SESSION['estado'] == "Cancelado"){
 
-//     $mensaje = "Ingrese la respectiva observacion del cancelamiento del carnet";
-
-// }else if(trim($_GET['estado']) == "Cancelado" && $_SESSION['estado'] == "Reproceso"){
-
-//     $mensaje = "Ingrese la respectiva observacion o el motivo por el cual el usuario decidio retomar el proceso de carnetizacion";
-
-// }else if(trim($_GET['estado']) == "Entregado" && $_SESSION['estado'] == "Reproceso"){
-
-//     $mensaje = "Ingrese la respectiva observacion o el motivo por el cual el usuario ha devuelto el carnet para sus respectivas correcciones";
-
-// }
-
-
-// $url = "'../../controlers/actualizarestados.php?"
-//        . "id=" . $_GET['Id']
-//        . "&idAdmision=" . $idAdmision
-//        . "&estado=" . $_GET['estado']
-//        . "&documento=" . $_GET['documento']
-//        . "&solicitud=" . $_GET['solicitud']
-//        . "&usuadmision=" . $_GET['usuadmision']
-//        . "&tipousuario=" . $_GET['tipousuario']
-//        . "&departamento=" . $departamento
-//        . "&observacion='";
-
-// ?>
+?>
 
 
 

@@ -1,9 +1,9 @@
 <?php
 
 if (session_status() === PHP_SESSION_NONE) {
-    session_start(); // Inicia la sesión si no está activa
+    session_start(); 
 }
-// require_once('../../../confing/conexion.php');
+
 require_once('../../../../usuarios/models/login.php');
 $model = new login();
 $model->validateTi();
@@ -122,20 +122,7 @@ if (isset($_SESSION['jsonFilePath'])) {
                 
             }
 
-            // echo "<pre>";
-            //     print_r($postgradoprimer);
-            // // echo    $datos['usuarios']['usuarios'][5]['documento'];
-            // echo "</pre>";
-
-        // print_r($_SESSION['pregradoprimer'] = $pregradoprimer);
-        // print_r($_SESSION['pregrado'] = $pregrado);
-        // print_r($_SESSION['postgradoprimer'] = $postgradoprimer);
-        // print_r($_SESSION['postgrado'] = $postgrado);
-        // print_r($_SESSION['grado'] = $grado);
-        // print_r($_SESSION['egresado'] = $egresado);
-        // print_r($_SESSION['jefatura'] = $jefatura);
-        // print_r($_SESSION['jefaturadu'] = $jefaturadu);
-        // print_r($_SESSION['duplicado'] = count($pregrado) + count($postgrado) + count($egresado) + count($jefaturadu));
+            
         $_SESSION['pregradoprimer'] = $pregradoprimer;
         $_SESSION['pregrado'] = $pregrado;
         $_SESSION['postgradoprimer'] = $postgradoprimer;
@@ -145,10 +132,7 @@ if (isset($_SESSION['jsonFilePath'])) {
         $_SESSION['jefatura'] = $jefatura;
         $_SESSION['jefaturadu'] = $jefaturadu;
         $_SESSION['duplicado'] = count($pregrado) + count($postgrado) + count($egresado) + count($jefaturadu);
-            // echo count($pregrado);
-            // echo count($postgrado);
-            // echo count($egresado);
-            // echo count($jefaturadu);
+            
 
         if(!empty($_SESSION['ppenviar']) == 'enviar'){
             if($_SESSION['modelo'] ){

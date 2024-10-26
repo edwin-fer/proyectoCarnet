@@ -1,7 +1,5 @@
 <?php
     require_once '../../../../usuarios/models/temAdmision.php';
-        // Establecer un ID de sesión provisional (solo para pruebas)
-                // session_id('provisional123');
 
                 if($_GET){
                     $_SESSION['modelo'] = $_GET['id'];
@@ -54,10 +52,7 @@
                     ];
                 }
 
-                // echo isset($_SESSION['ppenviar'])?$_SESSION['ppenviar']:"";
-                // echo isset($_SESSION['ppenviarvol'])?$_SESSION['ppenviarvol']:"";
-
-                // echo trim($_SESSION['tipo']);
+               
                 if(!empty($_SESSION['ppenviar']) == 'enviar'){
                     if($_SESSION['modelo'] ){
                         if($datos){
